@@ -1,6 +1,7 @@
 #Programa para calculadora
 
 
+from __future__ import barry_as_FLUFL
 from secrets import choice
 
 
@@ -30,4 +31,8 @@ while True:
             print (num1,"+",num2,"=",multiply(num1,num2))
         elif choice == '4':
             print(num1,"+",num2,"=",divide(num1,num2))
-    next_calculation = input("Quieres otro calculo")
+    next_calculation = input("Quieres otro calculo (si/no)"):
+    if next_calculation == "no":
+        break
+    else:
+        print("Carácter inválido")
